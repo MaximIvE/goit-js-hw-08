@@ -6,13 +6,8 @@ import { galleryItems } from './gallery-items';
 import SimpleLightbox from "simplelightbox";
 // Додатковий імпорт стилів
 import "simplelightbox/dist/simple-lightbox.min.css";
-//console.log(); це я поставив щоб швидко копіпастити
 
-// console.log(galleryItems);
-// console.log(SimpleLightbox);
-
-// ►►► Використовуємо код з дз 7 №2 та перероблюємо (а він чомусь і так нормально запрацював ☺ ♪♫♪ )
-
+// #1 Використовуємо код з дз 7 №2 та перероблюємо (а він чомусь і так нормально запрацював ☺ ♪♫♪ )
 const galleryEl = document.querySelector(".gallery");
 
 function createEl(src, href, alt){
