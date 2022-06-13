@@ -9,7 +9,7 @@ if (inputData.email) { form[0].value = inputData.email};
 if (inputData.message) { form[1].value = inputData.message};
 
 form.addEventListener('input', _.throttle((e)=>{
-    element = e.target;
+    const element = e.target;
 
     //записуємо дані в об'єкт
     inputData[element.name] = element.value;
