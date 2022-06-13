@@ -1,7 +1,7 @@
 import Player from '@vimeo/player';
 const iframe = document.querySelector('#vimeo-player');
 const player = new Player(iframe);
-var _ = require('lodash');
+const _ = require('lodash');
 
 // багато часу шукав назву обробника події при перезавантаженні форми, для addEventListener, потім знайшов 'onload', але воно в мене не запрацювало. 
 // Тому через let для змінної.

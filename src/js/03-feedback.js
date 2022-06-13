@@ -3,7 +3,7 @@ const form = document.querySelector('.feedback-form');
 let dataJson = localStorage.getItem("feedback-form-state");
 const inputData = dataJson ? JSON.parse(dataJson) : {email: "", message: ""};
 
-var _ = require('lodash');
+const _ = require('lodash');
 
 if (inputData.email) { form[0].value = inputData.email};
 if (inputData.message) { form[1].value = inputData.message};
