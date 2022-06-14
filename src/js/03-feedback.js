@@ -21,6 +21,10 @@ form.addEventListener('input', _.throttle((e)=>{
 
 form.addEventListener('submit', (e)=>{
     e.preventDefault();
+    if((inputData.email === '')|| (inputData.message === '')){
+        alert("Не всі поля заповнені");
+        return;
+    };
     console.log(inputData);
     localStorage.removeItem("feedback-form-state");
     inputData.email = '';
